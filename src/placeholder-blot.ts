@@ -29,7 +29,7 @@ export default function getPlaceholderBlot(Quill: QuillTypes.Quill): any {
       const labelNode = document.createTextNode(label)
 
       const wrapper = document.createElement('span')
-      wrapper.setAttribute('contenteditable', 'false')
+      wrapper.setAttribute('contenteditable', 'true')
       wrapper.appendChild(labelNode)
 
       node.appendChild(wrapper)
